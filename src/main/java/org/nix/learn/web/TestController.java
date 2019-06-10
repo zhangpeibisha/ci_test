@@ -18,7 +18,7 @@ public class TestController {
 
     @GetMapping(value = "/hello")
     public String hello() {
-        return StrUtil.format("hello {}", DateUtil.format(new Date(), "yyyy-MM-dd HH:mm:SS"));
+        return StrUtil.format("hello {} : 我查询时间", DateUtil.format(new Date(), "yyyy-MM-dd HH:mm:SS"));
     }
 
 }
