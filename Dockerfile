@@ -1,14 +1,15 @@
 FROM hub.c.163.com/housan993/centos7_jdk8
 
-MAINTAINER zhangpei zhangpe0312@qq.com
+MAINTAINER zhangpei
 
 RUN mkdir -p /usr/local/web
 
-COPY ./target/learn.jar /usr/local/web/learn.jar
-COPY ./start.sh /usr/local/web/start.sh
+COPY ./learn.jar  /usr/local/web/learn.jar
+COPY ./bulid.sh  /usr/local/web/bulid.sh
+COPY ./start.sh  /usr/local/web/start.sh
 
-EXPOSE 8081
+RUN chmod 777  /usr/local/web/start.sh
 
-RUN cd /usr/local/web
+CMD bash /usr/local/web/start.sh
 
-CMD["bash","start.sh"]
+
