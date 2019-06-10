@@ -1,3 +1,5 @@
-sudo fuser -k -n tcp 8082
+#!/usr/bin/env bash
+
 sudo fuser -k -n tcp 8081
-nohup java -jar -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8082  ./target/learn.jar --server.port=8081&
+docker build -t ceshi/ci_ceshi .
+docker run -d 8081:8081 ceshi/ci_ceshi
