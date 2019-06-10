@@ -7,4 +7,6 @@ package org.nix.learn;
 public class Test {
 
     private String ane;
+
+    private Integer age;
 }
