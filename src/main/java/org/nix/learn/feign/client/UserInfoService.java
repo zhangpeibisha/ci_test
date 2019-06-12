@@ -3,7 +3,6 @@ package org.nix.learn.feign.client;
 import com.alibaba.fastjson.JSONObject;
 import feign.Headers;
 import feign.RequestLine;
-import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @author zhangpei
