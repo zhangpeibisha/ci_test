@@ -79,10 +79,8 @@ public class HuffmanImpl {
                 new HuffmanImpl.Node(createCharData('e', 30)),
                 new HuffmanImpl.Node(createCharData('f', 20))
         );
-
-        HuffmanImpl huffman = new HuffmanImpl();
-        HuffmanImpl.Node tree = huffman.createTree(nodes);
-        huffman.travers(tree,"");
+        HuffmanImpl.Node tree = createTree(nodes);
+        travers(tree,"");
     }
 
     private CharData createCharData(char charValue,int number){
