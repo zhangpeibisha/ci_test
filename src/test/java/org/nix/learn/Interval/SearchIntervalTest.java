@@ -21,4 +21,15 @@ public class SearchIntervalTest {
         List<Node> search = searchInterval.search();
         System.out.println(search);
     }
+
+    @Test
+    public void search111() {
+        SearchInterval searchInterval = new SearchInterval(CollUtil.newArrayList(new Node(6, 8),
+                new Node(1, 5),
+                new Node(10, 15),
+                new Node(11, 17),
+                new Node(23, 30)));
+        List<Node> search = searchInterval.search();
+        System.out.println(search);
+    }
 }

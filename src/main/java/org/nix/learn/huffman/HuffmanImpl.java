@@ -1,6 +1,7 @@
 package org.nix.learn.huffman;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.StrUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -48,6 +49,7 @@ public class HuffmanImpl {
         //若是叶子结点，则输出它的编码
         if (root.getLeft() == null && root.getRight() == null) {
             char data = root.getData().getData();
+            System.out.println(StrUtil.format("value:{} code:{}",data,preCoding));
             compression.add(new Compression(data, preCoding));
             return;
         }

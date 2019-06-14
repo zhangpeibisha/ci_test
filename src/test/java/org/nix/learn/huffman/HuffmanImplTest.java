@@ -25,7 +25,7 @@ public class HuffmanImplTest {
         HuffmanImpl.Node tree = huffman.createTree(nodes);
         System.out.println();
         huffman.travers(tree,"");
-        System.out.println();
+        System.out.println(huffman.getCompression());
     }
 
 
